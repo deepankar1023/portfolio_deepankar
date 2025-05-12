@@ -546,7 +546,10 @@ export default function Home() {
                 {/* Screenshot Preview Button */}
                 <button
                   className="absolute bottom-4 right-4 bg-gray-800/80 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-blue-900/80"
-                  onClick={() => window.open("/projects/codecraft-preview.jpg", "_blank")}
+                  onClick={() => {
+                    const images = ['/img2.png', '/img3.png'];
+                    images.forEach(img => window.open(img, '_blank'));
+                  }}
                   aria-label="View project screenshot"
                 >
                   <Eye className="h-5 w-5 text-blue-300" />
@@ -622,7 +625,7 @@ export default function Home() {
                 {/* Screenshot Preview Button */}
                 <button
                   className="absolute bottom-4 right-4 bg-gray-800/80 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-blue-900/80"
-                  onClick={() => window.open("/projects/chowk-preview.jpg", "_blank")}
+                  onClick={() => window.open("/.png", "_blank")}
                   aria-label="View project screenshot"
                 >
                   <Eye className="h-5 w-5 text-blue-300" />
